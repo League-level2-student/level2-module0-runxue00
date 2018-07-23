@@ -32,13 +32,24 @@ public class _00_ArrayCheatSheet {
 		//8. without printing the entire array, print only the smallest number in the array
 		int lowest = Integer.MAX_VALUE;
 		for (int i = 0; i < ages.length; i++) {
-			if(lowest>ages[i]) {
+			if(lowest > ages[i]) {
 				lowest=ages[i];
+		} 
 		}
-		}
-		System.out.println(lowest);
+		JOptionPane.showMessageDialog(null, lowest);
+		
 		//9 print the entire array to see if step 8 was correct
+		for (int i = 0; i < ages.length; i++) {
+			System.out.println(ages[i]); 
+		}
 		
 		//10. print the largest number in the array.
+		int highest = Integer.MIN_VALUE;
+		for (int i = 0; i < ages.length; i++) {
+			if(highest<ages[i]) {
+				highest=ages[i];
+		}
+		}
+		JOptionPane.showMessageDialog(null, highest);
 	}
 }
